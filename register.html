@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrasi Dan Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="wrapper">
+        <div class="form registrasi">
+            <header>Registrasi</header>
+            <form action="#">
+                <input type="text" placeholder="Nama Lengkap" required/>
+                <input type="text" placeholder="Nama Email" required/>
+                <input type="password" placeholder="Password" required/>
+                <div class="checkbox">
+                    <input type="checkbox" name="" id="signupchek">
+                    <label for="signupchek">Saya menyetujui kebijakan tersebut !</label>
+
+                </div>
+                <input type="submit" value="signup">
+            </form>
+        </div>
+        <div class="form login">
+            <header>Login</header>
+            <form action="#">
+                <input type="text" placeholder="Masukkan Email" required />
+                <input type="password" placeholder="Masukan Password" required />
+                <a href="#">Lupa Password?</a>
+                <input type="submit" value="login">
+            </form>
+        </div>
+        <script>
+            const wrapper=document.querySelector(".wrapper"),
+            signupheader=document.querySelector(".signup header"),
+            loginheader=document.querySelector(".login header");
+
+            loginheader.addEventListener("click", ()=>{
+                wrapper.classList.add("active");
+            });
+            signupheader.addEventListener("click", ()=>{
+                wrapper.classList.add("active");
+            });
+        </script>
+    </section>
+</body>
+</html>

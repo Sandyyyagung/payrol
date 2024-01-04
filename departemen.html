@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Boxicons -->
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <!-- My CSS -->
+    <link rel="stylesheet" href="style.css">
+    <link href='bootstrap/css/bootstrap.css' rel='stylesheet'>
+    <link rel="stylesheet" href="bootstrap/datatables/datatables.css">
+    <link href="fontawesome/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <title>PT. Solusi Prima Sentosa</title>
+</head>
+
+<body>
+
+
+    <!-- SIDEBAR -->
+    <section id="sidebar">
+        <a href="#" class="brand">
+            <img src="img/Logo.png" style="height: 35px; width: 35px; margin-left: 25px;">
+        </a>
+        <ul class="side-menu top">
+            <li>
+                <a href="index.html">
+                    <i class='bx bxs-dashboard'></i>
+                    <span class="text">Dashboard</span>
+                </a>
+            </li>
+            <li>
+                <a href="karyawan.html">
+                    <i class='bx bx-user'></i>
+                    <span class="text">Karyawan</span>
+                </a>
+            </li>
+            <li class="active">
+                <a href="./departemen.html">
+                    <i class='bx bxs-data'></i>
+                    <span class="text">Departemen</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-fingerprint'></i>
+                    <span class="text">Absensi</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-wallet'></i>
+                    <span class="text">Penggajian</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bxs-notepad'></i>
+                    <span class="text">Cuti</span>
+                </a>
+            </li>
+        </ul>
+        <ul class="side-menu">
+            <li>
+                <a href="login.html" class="logout">
+                    <i class='bx bxs-log-out-circle'></i>
+                    <span class="text">Logout</span>
+                </a>
+            </li>
+        </ul>
+    </section>
+    <!-- SIDEBAR -->
+
+
+
+    <!-- CONTENT -->
+    <section id="content">
+        <!-- NAVBAR -->
+        <nav>
+            <i class='bx bx-menu'></i>
+            <a href="#" class="nav-link">Menu</a>
+            <form action="#">
+                <div class="form-input">
+                    <input type="search" placeholder="Search...">
+                    <button type="submit" class="search-btn"><i class='bx bx-search'></i></button>
+                </div>
+            </form>
+            <input type="checkbox" id="switch-mode" hidden>
+            <a href="#" class="profile">
+                <img src="img/people.png">
+            </a>
+        </nav>
+        <!-- NAVBAR -->
+
+        <!-- MAIN -->
+        <main>
+            <div class="head-title">
+                <div class="left">
+                    <h1>Departemen</h1>
+                    <ul class="breadcrumb">
+                        <li>
+                            <a href="#">Dashboard</a>
+                        </li>
+                        <li><i class='bx bx-chevron-right'></i></li>
+                        <li>
+                            <a class="active" href="index.html">Karyawan</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="table-data">
+                <div class="order">
+                    <div class="head">
+                        <h3>Departemen</h3>
+                        <i class='bx bx-search'></i>
+                        <i class='bx bx-filter'></i>
+                    </div>
+                    <!--Awal Carousel-->
+                    <div class="container border mt-4 pt-3">
+                        <a class='btn btn-primary me-2' href='index.html' <button> <i
+                                class='fa-solid fa-plus me-2'></i>Tambah Departemen</button></a>
+                        <br>
+                        <br>
+                        <table class="table table-striped table-bordered">
+                            <thead class="colspa">
+                                <tr>
+                                    <th>Nomor</th>
+                                    <th>Nama Departemen</th>
+                                    <th>Edit</th>
+                                    <th>Hapus</th>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td>Mark</td>
+                                    <td style="padding-left: 15px;"><a class='btn btn-warning'><i
+                                                class='fa-solid fa-pen-to-square'></i></td>
+                                    <td style="padding-left: 20px;"><a class='btn btn-danger'><i
+                                                class='fa-solid fa-trash'></i></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">2</th>
+                                    <td>Keuangan</td>
+                                    <td style="padding-left: 15px;"><a class='btn btn-warning'><i
+                                                class='fa-solid fa-pen-to-square'></i></td>
+                                    <td style="padding-left: 20px;"><a class='btn btn-danger'><i
+                                                class='fa-solid fa-trash'></i></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">3</th>
+                                    <td>IT</td>
+                                    <td style="padding-left: 15px;"><a class='btn btn-warning'><i
+                                                class='fa-solid fa-pen-to-square'></i></td>
+                                    <td style="padding-left: 20px;"><a class='btn btn-danger'><i
+                                                class='fa-solid fa-trash'></i></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">4</th>
+                                    <td>Manager</td>
+                                    <td style="padding-left: 15px;"><a class='btn btn-warning'><i
+                                                class='fa-solid fa-pen-to-square'></i></td>
+                                    <td style="padding-left: 20px;"><a class='btn btn-danger'><i
+                                                class='fa-solid fa-trash'></i></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <!-- MAIN -->
+    </section>
+    <!-- CONTENT -->
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
